@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
         <Link to="/" style={{textDecoration:"none",color:"white"}}><li>Home</li></Link>
         <Link to="/about"style={{textDecoration:"none",color:"white"}} ><li>About Me</li></Link>
         <Link to="/service "style={{textDecoration:"none",color:"white"}}><li>Services</li></Link>
-        <Link to="/porfolio "style={{textDecoration:"none",color:"white"}}><li>Portfolio</li></Link>
+        <Link to="/portfolio "style={{textDecoration:"none",color:"white"}}><li>Portfolio</li></Link>
         <Link to="/contact" style={{textDecoration:"none",color:"white"}}><li>Contact</li></Link>
       </ul>
       <div className="nav-connect">Connect With Me</div>
