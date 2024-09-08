@@ -12,7 +12,7 @@ const Navbar = () => {
         <Link to="/portfolio "style={{textDecoration:"none",color:"white"}}><li>Portfolio</li></Link>
         <Link to="/contact" style={{textDecoration:"none",color:"white"}}><li>Contact</li></Link>
       </ul>
-      <div className="nav-connect">Connect With Me</div>
+      <a style={{textDecoration:"none",color:"white"}} href="https://www.linkedin.com/in/papunm/"><div className="nav-connect">Connect With Me</div></a>
     </div>
   );
 };

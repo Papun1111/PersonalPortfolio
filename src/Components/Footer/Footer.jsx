@@ -17,8 +17,13 @@ const Footer = () => {
             <div className="footer-email-input">
                 <img src={usericon} alt="" />
                 <input type="email" placeholder=" enter your email"/>
+            <a href="https://www.linkedin.com/in/papunm/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Papun1111"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
             <div className="footer-subscribe">Subscribe</div>
+
         </div>
       </div>
       <hr />
