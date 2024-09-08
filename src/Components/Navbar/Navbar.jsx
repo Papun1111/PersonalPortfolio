@@ -6,11 +6,11 @@ const Navbar = () => {
     <div className="navbar">
       <h2 className="logo">Papun</h2>
       <ul className="nav-menu">
-        <Link to="/" style={{textDecoration:"none"}}><li>Home</li></Link>
-        <Link to="/about"style={{textDecoration:"none"}} ><li>About Me</li></Link>
-        <Link to="/service "style={{textDecoration:"none"}}><li>Services</li></Link>
-        <Link to="/porfolio "style={{textDecoration:"none"}}><li>Portfolio</li></Link>
-        <li>Contact</li>
+        <Link to="/" style={{textDecoration:"none",color:"white"}}><li>Home</li></Link>
+        <Link to="/about"style={{textDecoration:"none",color:"white"}} ><li>About Me</li></Link>
+        <Link to="/service "style={{textDecoration:"none",color:"white"}}><li>Services</li></Link>
+        <Link to="/porfolio "style={{textDecoration:"none",color:"white"}}><li>Portfolio</li></Link>
+        <Link to="/contact" style={{textDecoration:"none",color:"white"}}><li>Contact</li></Link>
       </ul>
       <div className="nav-connect">Connect With Me</div>
     </div>

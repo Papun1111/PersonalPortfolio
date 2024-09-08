@@ -1,0 +1,136 @@
+/* Contact.css */
+
+.contact {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+  }
+  
+  .contact img {
+    width: 100%;
+    max-width: 150px; /* Adjusted size for a smaller theme pattern */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjusted spacing */
+  }
+  
+  .contact-left {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .contact-left h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #f5a623;
+  }
+  
+  .contact-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-detail img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .contact-detail p {
+    font-size: 1rem;
+  }
+  
+  .contact-right {
+    flex: 1;
+    max-width: 50%;
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Adjusted gradient colors */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .contact-right label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-right input:focus,
+  .contact-right textarea:focus {
+    border-color: #f5a623;
+    outline: none;
+  }
+  
+  .contact-right button.contact-submit {
+    background: #f5a623;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-right button.contact-submit:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
