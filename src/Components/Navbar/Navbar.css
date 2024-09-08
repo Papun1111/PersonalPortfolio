@@ -1,0 +1,161 @@
+/* Base Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 5%;
+}
+
+.logo {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,10,177,1) 35%, rgba(0,212,255,1) 100%);
+    font-size: 2rem; /* Base font size */
+    padding: 10px; /* Added padding for better spacing */
+    border-radius: 5px; /* Rounded corners for aesthetic */
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 1.25rem; /* Use rem for scalability */
+}
+
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,120,177,1) 35%, rgba(0,212,255,1) 100%);
+    font-size: 1.375rem; /* Use rem for scalability */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smoother transition */
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem; /* Use rem for scalability */
+    line-height: 1.6;
+    margin: 0 auto; /* Center the text block */
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 1.5rem; /* Use rem for scalability */
+    font-weight: 500;
+    margin-bottom: 50px;
+    justify-content: center; /* Center action buttons */
+}
+
+.hero-connect {
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(213,25,133,1) 100%);
+    cursor: pointer;
+}
+
+.hero-resume {
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.hero-connect:hover {
+    border: 2px solid white;
+}
+
+.hero-resume:hover {
+    border: 2px solid cyan;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .navbar {
+        margin: 20px 3%;
+    }
+
+    .nav-menu {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-menu {
+        font-size: 1rem;
+        gap: 20px;
+    }
+
+    .hero p {
+        width: 70%;
+        font-size: 1.25rem;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 2%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .hero p {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        margin: 10px 2%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .nav-menu {
+        font-size: 0.875rem;
+    }
+
+    .hero p {
+        font-size: 0.875rem;
+    }
+
+    .hero-action {
+        gap: 10px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 10px 20px;
+    }
+}

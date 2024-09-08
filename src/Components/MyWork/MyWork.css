@@ -1,0 +1,95 @@
+/* MyWork.css */
+
+/* General container styling */
+.mywork {
+    background-color: #121212; /* Blackish background */
+    color: #e0e0e0; /* Light grey text for better readability on dark background */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title section */
+  .mywork-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .mywork-title h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #ffffff; /* White color for the title */
+  }
+  
+  .mywork-title img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+  }
+  
+  /* Container for work items */
+  .mywork-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual work item */
+  .mywork-container > div {
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* Linear gradient background */
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .mywork-container h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #f0f0f0; /* Light grey text color */
+  }
+  
+  .mywork-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .mywork-container a {
+    display: inline-block;
+    font-size: 1em;
+    color: #4caf50; /* Green color for the link */
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  .mywork-container a:hover {
+    color: #81c784; /* Lighter green on hover */
+    text-decoration: underline;
+  }
+  
+  .mywork-container > div:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+  }
+  
+  /* Show more section */
+  .mywork-showmore {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .mywork-showmore p {
+    font-size: 1.2em;
+    color: #ffffff; /* White color for the show more text */
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .mywork-showmore img {
+    margin-top: 10px;
+    max-width: 50px;
+    vertical-align: middle;
+  }
+  

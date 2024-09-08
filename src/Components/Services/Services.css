@@ -1,0 +1,97 @@
+
+/* Services.css */
+
+.services {
+  padding: 40px;
+  background: #000; /* Black background */
+  color: #ecf0f1; /* Light text color for contrast */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.services-title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.services-title h1 {
+  font-size: 3rem;
+  color: #ecf0f1;
+  margin: 0;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6f61, #d83a56); /* Updated gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-title img {
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100px;
+  opacity: 0.6;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.services-format {
+  background: linear-gradient(135deg, #1c1c1c, #2d2d2d); /* Darker gradient for service items */
+  border: 1px solid #333; /* Darker border for contrast */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Stronger shadow for better contrast */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services-format:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.services-format h3 {
+  font-size: 1.5rem;
+  color: #ff6f61; /* Updated to match the gradient */
+  margin: 0 0 10px;
+}
+
+.services-format h2 {
+  font-size: 2rem;
+  color: #ecf0f1;
+  margin: 0 0 10px;
+}
+
+.services-format p {
+  font-size: 1rem;
+  color: #bdc3c7; /* Light grey text for readability */
+  margin: 0 0 20px;
+}
+
+.services-readmore {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.services-readmore p {
+  font-size: 1rem;
+  color: #ff6f61; /* Matches the gradient and heading */
+  margin: 0;
+  font-weight: bold;
+}
+
+.services-readmore img {
+  margin-left: 10px;
+  width: 20px;
+  transition: transform 0.3s;
+}
+
+.services-readmore:hover img {
+  transform: translateX(5px);
+}
