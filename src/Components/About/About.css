@@ -64,10 +64,6 @@
     padding-left: 20px;
 }
 
-.about-right:hover {
-    /* Removed the background-color change on hover */
-}
-
 .about-para p {
     margin-bottom: 20px;
     line-height: 1.6;
@@ -93,14 +89,27 @@
 
 hr {
     border: none;
-    height: 5px;
-    background: linear-gradient(90deg, #00f260, #0575e6);
-    border-radius: 5px;
+    height: 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00f260 0%, #0575e6 100%);
     transition: background 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-hr:hover {
-    background: linear-gradient(90deg, #0575e6, #00f260);
+hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    transition: width 0.3s ease;
+}
+
+hr:hover::before {
+    width: 100%;
 }
 
 .about-achievements {

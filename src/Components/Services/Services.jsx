@@ -1,12 +1,14 @@
 import React from 'react'
 import "./Services.css"
 import Services_Data from "../../assets/services_data"
+import theme from "../../assets/theme_pattern.svg"
+import iconarrow from "../../assets/arrow_icon.svg";
 const Services = () => {
   return (
     <div className='services'>
       <div className="services-title">
         <h1>My Services</h1>
-        <img src="../../src/assets/theme_pattern.svg" alt="" />
+        <img src={theme} alt="" />
       </div>
       <div className="services-container">
 {Services_Data.map((service,index)=>{
@@ -16,7 +18,7 @@ return <div key={index} className="services-format">
 <p>{service.s_desc}</p>
 <div className='services-readmore'>
     <p>Read More</p>
-    <img src="../../src/assets/arrow_icon.svg" alt="" />
+    <img src={iconarrow} alt="" />
 </div>
 </div>
 })}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import usericon from "../../assets/user_icon.svg"
 const Footer = () => {
   return (
     <div className="footer">
@@ -14,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="footer-top-right">
             <div className="footer-email-input">
-                <img src="../../src/assets/user_icon.svg" alt="" />
+                <img src={usericon} alt="" />
                 <input type="email" placeholder=" enter your email"/>
             </div>
             <div className="footer-subscribe">Subscribe</div>
