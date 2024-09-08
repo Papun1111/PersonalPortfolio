@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-left">
           <img
             className="profile-img"
-            src="../../src/assets/profile.jpeg"
+            src="../../src/assets/myface.png"
             alt=""
           />
         </div>
