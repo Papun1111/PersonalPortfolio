@@ -92,4 +92,80 @@
     max-width: 50px;
     vertical-align: middle;
   }
-  
+  /* Mobile screens (up to 576px) */
+@media (max-width: 576px) {
+  /* General container styling */
+  .mywork {
+    padding: 15px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Title section */
+  .mywork-title {
+    margin-bottom: 15px;
+  }
+
+  .mywork-title h1 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  .mywork-title img {
+    max-width: 80%; /* Adjusted width for mobile */
+  }
+
+  /* Container for work items */
+  .mywork-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Reduced gap for mobile view */
+  }
+
+  /* Individual work item */
+  .mywork-container > div {
+    width: 100%; /* Full width on mobile */
+    max-width: 350px; /* Set a max width to prevent excessive stretching */
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .mywork-container h1 {
+    font-size: 1.3em; /* Reduced font size */
+    margin: 8px 0;
+    color: #f0f0f0;
+  }
+
+  .mywork-container img {
+    margin-bottom: 8px;
+  }
+
+  .mywork-container a {
+    font-size: 0.9em; /* Slightly smaller font size for links */
+  }
+
+  .mywork-container a:hover {
+    color: #81c784;
+    text-decoration: underline;
+  }
+
+  .mywork-container > div:hover {
+    transform: scale(1.03); /* Reduced scale for hover effect */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Reduced box-shadow for smaller screens */
+  }
+
+  /* Show more section */
+  .mywork-showmore {
+    margin-top: 20px;
+  }
+
+  .mywork-showmore p {
+    font-size: 1em; /* Reduced font size for "show more" text */
+    margin: 0;
+  }
+
+  .mywork-showmore img {
+    max-width: 40px; /* Adjusted size for mobile */
+    margin-top: 5px;
+  }
+}

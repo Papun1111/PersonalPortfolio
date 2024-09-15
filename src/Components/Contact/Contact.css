@@ -153,3 +153,95 @@
     opacity: 1;
   }
 }
+
+/* Mobile screens (up to 576px) */
+@media (max-width: 576px) {
+  .contact {
+      padding: 20px;
+  }
+
+  .contact-title {
+      margin-bottom: 15px;
+  }
+
+  .contact h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #e0e0e0;
+  }
+
+  .contact img {
+      max-width: 100px; /* Smaller size for mobile screens */
+      top: 60%; /* Adjusted position for better fit */
+  }
+
+  .contact-section {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .contact-left,
+  .contact-right {
+      max-width: 100%;
+  }
+
+  .contact-left h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #f5a623;
+  }
+
+  .contact-left p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #ccc;
+  }
+
+  .contact-details {
+      margin-top: 15px;
+  }
+
+  .contact-detail {
+      margin-bottom: 10px;
+  }
+
+  .contact-detail img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+  }
+
+  .contact-detail p {
+      font-size: 0.9rem;
+  }
+
+  .contact-right {
+      padding: 15px;
+      border-radius: 5px;
+  }
+
+  .contact-right::before {
+      background: url('../../src/assets/theme_pattern.svg') no-repeat center center;
+      background-size: cover;
+  }
+
+  .contact-right label {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+
+  .contact-right button.contact-submit {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+  }
+
+  .contact-right button.contact-submit:hover {
+      transform: scale(1.03);
+  }
+}

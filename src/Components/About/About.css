@@ -155,3 +155,69 @@ hr:hover::before {
 .about-achievement p:hover {
     color: #0575e6;
 }
+
+/* Mobile screens (up to 576px) */
+@media (max-width: 576px) {
+    .about {
+        padding: 10px;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .title img {
+        width: 80px;
+    }
+
+    .about-sections {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .about-left, .about-right {
+        text-align: center;
+        flex: 1;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-right {
+        padding-left: 0;
+    }
+
+    .about-para p {
+        margin-bottom: 15px;
+    }
+
+    .about-skills {
+        margin-top: 15px;
+    }
+
+    .about-skill {
+        margin-bottom: 5px;
+    }
+
+    .about-achievements {
+        flex-direction: column;
+        padding: 15px;
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    }
+
+    .about-achievement {
+        margin: 10px 0;
+    }
+
+    .about-achievement h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-achievement p {
+        font-size: 1rem;
+    }
+}

@@ -12,6 +12,12 @@
     font-size: 2rem; /* Base font size */
     padding: 10px; /* Added padding for better spacing */
     border-radius: 5px; /* Rounded corners for aesthetic */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(57,10,177,1) 35%, rgba(2,0,36,1) 100%);
 }
 
 .nav-menu {
@@ -22,6 +28,17 @@
     font-size: 1.25rem; /* Use rem for scalability */
 }
 
+.nav-menu a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: rgb(0,212,255);
+    transform: translateY(-5px);
+}
+
 .nav-connect {
     padding: 20px 40px;
     border-radius: 50px;
@@ -29,11 +46,12 @@
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,120,177,1) 35%, rgba(0,212,255,1) 100%);
     font-size: 1.375rem; /* Use rem for scalability */
     cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Smoother transition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smoother transition */
 }
 
 .nav-connect:hover {
     transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
 }
 
 .hero p {
@@ -42,6 +60,11 @@
     font-size: 1.5rem; /* Use rem for scalability */
     line-height: 1.6;
     margin: 0 auto; /* Center the text block */
+    transition: color 0.3s ease-in-out;
+}
+
+.hero p:hover {
+    color: rgb(0,212,255);
 }
 
 .hero-action {
@@ -54,27 +77,32 @@
     justify-content: center; /* Center action buttons */
 }
 
-.hero-connect {
+.hero-connect, .hero-resume {
     padding: 25px 45px;
     border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.hero-connect {
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(213,25,133,1) 100%);
-    cursor: pointer;
 }
 
 .hero-resume {
     padding: 25px 75px;
-    border-radius: 50px;
     border: 2px solid #fff;
-    cursor: pointer;
 }
 
 .hero-connect:hover {
+    background: rgb(0,212,255);
     border: 2px solid white;
+    transform: scale(1.05);
 }
 
 .hero-resume:hover {
     border: 2px solid cyan;
+    transform: scale(1.05);
 }
 
 /* Responsive Styles */
@@ -157,5 +185,38 @@
 
     .hero-connect, .hero-resume {
         padding: 10px 20px;
+    }
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 480px) {
+    .navbar {
+        margin: 10px 1%;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        padding: 6px;
+    }
+
+    .nav-menu {
+        font-size: 0.75rem;
+        gap: 10px;
+    }
+
+    .hero p {
+        font-size: 0.75rem;
+    }
+
+    .hero-action {
+        gap: 8px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 8px 15px;
+    }
+
+    .hero-connect:hover, .hero-resume:hover {
+        border-width: 1px;
     }
 }
