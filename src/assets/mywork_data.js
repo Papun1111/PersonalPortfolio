@@ -14,7 +14,7 @@ const mywork_data = [
     w_no: 2,
     w_name: "Pamotra-Del-admin",
     w_img: project5_img,
-    w_link: "https://fooddeliveryadminpage.onrender.com/add",
+    w_link: "https://fooddeliveryadminpage.onrender.com/",
   },
   {
     w_no: 3,
